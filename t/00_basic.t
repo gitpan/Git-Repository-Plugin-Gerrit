@@ -1,8 +1,12 @@
 use strict;
 use warnings;
 
-use Test::More tests => 2;
+use Test::More;
 use Test::Fatal qw(exception);
+use Test::Git qw(has_git);
+
+has_git();
+plan tests => 2;
 
 my $package = 'Git::Repository::Plugin::Gerrit';
 use_ok($package);

@@ -29,7 +29,7 @@ no_index:
 provides:
   Git::Repository::Plugin::Gerrit:
     file: lib/Git/Repository/Plugin/Gerrit.pm
-    version: 0.02
+    version: 0.03
 requires:
   Git::Repository: 1.13
   Git::Repository::Plugin::Log: 0
@@ -38,4 +38,4 @@ resources:
   bugtracker: https://github.com/nnutter/Git-Repository-Plugin-Gerrit/issues
   homepage: https://github.com/nnutter/Git-Repository-Plugin-Gerrit
   repository: git://github.com/nnutter/Git-Repository-Plugin-Gerrit.git
-version: 0.02
+version: 0.03
