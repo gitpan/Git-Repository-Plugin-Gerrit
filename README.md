@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/nnutter/Git-Repository-Plugin-Gerrit.png?branch=master)](https://travis-ci.org/nnutter/Git-Repository-Plugin-Gerrit)
 # NAME
 
 Git::Repository::Plugin::Gerrit - It's new $module

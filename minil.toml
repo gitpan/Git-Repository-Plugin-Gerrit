@@ -1,2 +1,2 @@
 name = "Git-Repository-Plugin-Gerrit"
-# badges = ["travis"]
+badges = ["travis"]

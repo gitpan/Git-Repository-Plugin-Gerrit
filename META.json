@@ -50,6 +50,7 @@
       },
       "test" : {
          "requires" : {
+            "Test::Fatal" : "0",
             "Test::More" : "0.98"
          }
       }
@@ -57,7 +58,7 @@
    "provides" : {
       "Git::Repository::Plugin::Gerrit" : {
          "file" : "lib/Git/Repository/Plugin/Gerrit.pm",
-         "version" : "0.01"
+         "version" : "0.02"
       }
    },
    "release_status" : "stable",
@@ -71,5 +72,5 @@
          "web" : "https://github.com/nnutter/Git-Repository-Plugin-Gerrit"
       }
    },
-   "version" : "0.01"
+   "version" : "0.02"
 }
