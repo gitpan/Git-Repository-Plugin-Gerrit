@@ -1,7 +1,7 @@
 {
-   "abstract" : "It's new $module",
+   "abstract" : "Work with Gerrit-specific features in a Git::Repository",
    "author" : [
-      "Nathaniel Nutter <iam@nnutter.com>"
+      "Nathaniel Nutter <nnutter@cpan.org>"
    ],
    "dynamic_config" : 0,
    "generated_by" : "Minilla/v0.11.0",
@@ -58,7 +58,7 @@
    "provides" : {
       "Git::Repository::Plugin::Gerrit" : {
          "file" : "lib/Git/Repository/Plugin/Gerrit.pm",
-         "version" : "0.03"
+         "version" : "0.04"
       }
    },
    "release_status" : "stable",
@@ -72,5 +72,8 @@
          "web" : "https://github.com/nnutter/Git-Repository-Plugin-Gerrit"
       }
    },
-   "version" : "0.03"
+   "version" : "0.04",
+   "x_contributors" : [
+      "Nathaniel Nutter <iam@nnutter.com>"
+   ]
 }

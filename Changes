@@ -1,5 +1,9 @@
 Revision history for Perl extension Git-Repository-Plugin-Gerrit
 
+0.04 2014-05-14T18:36:56Z
+
+    - Update docs.
+
 0.03 2014-02-03T05:15:54Z
 
     - Skip tests if Git is not found.

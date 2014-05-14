@@ -4,7 +4,7 @@ use 5.008005;
 use strict;
 use warnings;
 
-our $VERSION = "0.03";
+our $VERSION = "0.04";
 
 use parent qw(Git::Repository::Plugin);
 
@@ -62,7 +62,7 @@ __END__
 
 =head1 NAME
 
-Git::Repository::Plugin::Gerrit - It's new $module
+Git::Repository::Plugin::Gerrit - Work with Gerrit-specific features in a Git::Repository
 
 =head1 SYNOPSIS
 
@@ -70,7 +70,19 @@ Git::Repository::Plugin::Gerrit - It's new $module
 
 =head1 DESCRIPTION
 
-Git::Repository::Plugin::Gerrit is ...
+Git::Repository::Plugin::Gerrit adds the C<find_change> method to a
+Git::Repository and injects a C<change_id> accessor to Git::Repository::Log.
+
+=head1 METHODS
+
+=head2 find_change($change_id)
+
+Search the log of a Git::Repository for the specified L<Gerrit Change-Id|https://gerrit-documentation.storage.googleapis.com/Documentation/2.8.5/user-changeid.html>.
+Returns the corresponding L<Git::Repository::Log|Git::Repository::Log> object.
+
+=head2 change_id
+
+Return the L<Gerrit Change-Id|https://gerrit-documentation.storage.googleapis.com/Documentation/2.8.5/user-changeid.html> of a Git::Repository::Log.
 
 =head1 LICENSE
 
@@ -81,7 +93,7 @@ it under the same terms as Perl itself.
 
 =head1 AUTHOR
 
-Nathaniel Nutter E<lt>iam@nnutter.comE<gt>
+Nathaniel Nutter E<lt>nnutter@cpan.orgE<gt>
 
 =cut
 
